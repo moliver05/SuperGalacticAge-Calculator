@@ -17,15 +17,16 @@ If a user has already surpassed the average life expectancy, return the number o
 
 
 ### Specs
-| Input | Calculator |
-| :-------------   | :------------- |  :------------- |
-| **Program Gathers Age of User** | Current Age: "user age" | Expected Age: (results varies below) |
-| Planets | Conversion |
-| :-------------   | :------------- |
-| **Mercury Age** |  **A Mercury year is .24 Earth years** | 
-| **Venus Age** |  **A Venus year is .62 Earth years** |
-| **Mars Age** |  **A Mars year is 1.88 Earth years** | 
-| **Jupiter Age** |  **A Jupiter year is 11.86 Earth years** | 
+|          Input Age          |      Calculated   Age   |
+| :-------------------------- | :---------------------- | :------------------------------------|
+| Program Gathers Age of User | Current Age: "user age" | Expected Age: (results varies below) |
+|-----------------------------|
+| Planets     | Conversion     |
+| :---------- | :------------- |
+| Mercury Age |  A Mercury year is .24 Earth years | 
+| Venus Age   |  A Venus year is .62 Earth years |
+| Mars Age    |  A Mars year is 1.88 Earth years | 
+| Jupiter Age |  A Jupiter year is 11.86 Earth years | 
 
 
 ## Setup/Installation Requirements
