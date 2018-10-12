@@ -4,15 +4,15 @@ describe('galaxyCal', function()
 {
     var reusablegalaxyCal;
     beforeEach(function(){
-        reusablegalaxyCal = new galaxyCal(10,05,1995);
+        reusablegalaxyCal = new galaxyCal(23, healthy);
     });
 
-    it('should test that the month, day and year is valid', function()
+    it('should test that the age and status are valid', function()
     {
-        var galaxyCal = new galaxyCal(10,05,1995);
-        expect(galaxyCal.month).toEqual(10);
-        expect(galaxyCal.day).toEqual(05);
-        expect(galaxyCal.year).toEqual(1995);
+        var galaxyCal = new galaxyCal(age, status);
+        expect(galaxyCal.age).toEqual(23;
+        expect(galaxyCal.status).toEqual(healthy);
+       
 
     });
 
