@@ -18,8 +18,9 @@ If a user has already surpassed the average life expectancy, return the number o
 
 ### Specs
 | Input | Calculator |
-| :-------------   | :------------- | | :------------- |
-| **Program Gathers Age of User** | Current Age: "user age" |Expected Age: (results varies below) |
+| :-------------   | :------------- |  :------------- |
+| **Program Gathers Age of User** | Current Age: "user age" | Expected Age: (results varies below) |
+| Planets | Conversion |
 | :-------------   | :------------- |
 | **Mercury Age** |  **A Mercury year is .24 Earth years** | 
 | **Venus Age** |  **A Venus year is .62 Earth years** |
