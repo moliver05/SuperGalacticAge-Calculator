@@ -30,7 +30,7 @@ If a user has already surpassed the average life expectancy, return the number o
 
 ## Setup/Installation Requirements
 
-1. Clone this repository at https://github.com/moliver05/Salon
+1. Clone this repository at https://github.com/moliver05/SuperGalacticAge-Calculator
 2. Go to folder directory SuperGalacticAge-Calculator
 3. Run the Index.html on your browser.
 
