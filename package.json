@@ -1,0 +1,15 @@
+{
+  "name": "SuperGalacticAge-Calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "start": "npm run build && webpack-dev-server --open --mode development",
+    "lint": "eslint src/*.js",
+    "test": "karma start karma.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
