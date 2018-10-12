@@ -13,8 +13,8 @@ const lifeExpLimit = {
 };
 
 export const lifeExpStatus = {
-    healthy: yes,
-    unhealthy: no
+    healthy: 1,
+    unhealthy: 2
 }
 
 // Main 
