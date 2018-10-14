@@ -1,126 +1,72 @@
 // Planet Age Formula 
 const planetYears = {
-    mercuryAge: 0.24,
-    venusAge: 0.62,
-    marsAge: 1.88,
-    jupiterAge: 11.86
-  };
-
-// Life Expectancy Option
-const lifeExpLimit = {
-    healthy: 80,
-    unhealthy: 40
+  mercuryAge: 0.24,
+  venusAge: 0.62,
+  marsAge: 1.88,
+  jupiterAge: 11.86
 };
 
-export const lifeExpStatus = {
-    healthy: 1,
-    unhealthy: 2
-}
+// Life Expectancy 
+const lifeExpectancy = {
+  marsLimit: 3,
+  mercuryLimit: 7,
+  venusLimit: 9,
+  jupiterLimit: 12
+};
 
 // Main 
 export class galaxyCal {
-    constructor(age, status) {
-        this.age = age;
-        this.status = status;
-    }
+  constructor(age, status) {
+    this.age = age;
+    this.status = status;
+  }
 
-// Check Life Expectancy
-CheckLifeExpectancy () {
-    if (this.status === lifeExpStatus.healthy) {
-        return  lifeExpLimit.healthy;
-    }
-    else {
-        return lifeExpLimit.unhealthy;
-    }
-}
 
-get lifeExpectancy(){
-    return this.lifeExpectancy();
-}
-
-// Mercury Planet
-ConvertMercuryAge() {
+  // Mercury Planet
+  ConvertMercuryAge() {
     return (this.age / planetYears.mercuryAge.toFixed(2));
   }
 
-get MercuryAge() {
-    return this.ConvertMercuryAge();
+  MercuryAgeLimit() {
+    return (this.age * lifeExpectancy.mercuryLimit / planetYears.mercuryAge.toFixed(2));
   }
 
-get MercuryLifeExp() {
-    return this.MercuryLimit();
-  }
-
-get MercuryLimit() {
-    return Math.abs(this.lifeExpectancy);
-  }
-
-MercuryAgeLimit() {
-    return (this.lifeExpectancy / planetYears.mercuryAge - this.MercuryAge.toFixed(2));
-  }
-
-// Mars Planet
-ConvertMarsAge() {
+  // Mars Planet
+  ConvertMarsAge() {
     return (this.age / planetYears.marsAge.toFixed(2));
   }
 
-get MarsAge() {
-    return this.ConvertMarsAge();
+  MarsAgeLimit() {
+    return (this.age * lifeExpectancy.marsLimit / planetYears.marsAge.toFixed(2));
   }
 
-get MarsLifeExp() {
-    return this.MarsLimit();
-  }
-
-get MarsLimit() {
-    return Math.abs(this.lifeExpectancy);
-  }
-
-MarsAgeLimit() {
-    return (this.lifeExpectancy / planetYears.MarsAge - this.MarsAge.toFixed(2));
-  }
-
-// Venus Limit
-ConvertMarsAge() {
+  // Venus Limit
+  ConvertMarsAge() {
     return (this.age / planetYears.venusAge.toFixed(2));
   }
 
-get VenusAge() {
-    return this.ConvertVenusAge();
+  VenusAgeLimit() {
+    return (this.age * lifeExpectancy.venusLimit / planetYears.venusAge.toFixed(2));
   }
 
-get VenusLifeExp() {
-    return this.VenusLimit();
-  }
-
-get VenusLimit() {
-    return Math.abs(this.lifeExpectancy);
-  }
-
-VenusAgeLimit() {
-    return (this.lifeExpectancy / planetYears.venusAge - this.VenusAge.toFixed(2));
-  }
-
-//   Jupiter Planet
-ConvertJupiterAge() {
+  //   Jupiter Planet
+  ConvertJupiterAge() {
     return (this.age / planetYears.jupiterAge.toFixed(2));
   }
 
-get JupiterAge() {
-    return this.ConvertJupiterAge();
+  JupiterAgeLimit() {
+    return (this.age * lifeExpectancy.jupiterLimit / planetYears.jupiterAge.toFixed(2));
   }
 
-get JupiterLifeExp() {
-    return this.JupiterLimit();
-  }
+  //  Years Left
+  PlanetYearsLeft() {
+    var earthAge = 75;
+    if ((this.MercuryAgeLimit() || this.MarsAgeLimit() || this.JupiterAgeLimit() || this.VenusAgeLimit() <= earthAge))
+      return true;
+    else {
+      return false;
+    }
 
-get JupiterLimit() {
-    return Math.abs(this.lifeExpectancy);
   }
-
-JupiterAgeLimit() {
-    return (this.lifeExpectancy / planetYears.jupiterAge - this.JupiterAge.toFixed(2));
-  }
-
 
 }
