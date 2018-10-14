@@ -16,9 +16,8 @@ const lifeExpectancy = {
 
 // Main 
 export class galaxyCal {
-  constructor(age, status) {
+  constructor(age) {
     this.age = age;
-    this.status = status;
   }
 
 
