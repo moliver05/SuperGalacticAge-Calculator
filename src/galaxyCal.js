@@ -23,38 +23,38 @@ export class galaxyCal {
 
   // Mercury Planet
   ConvertMercuryAge() {
-    return (this.age / planetYears.mercuryAge.toFixed(2));
+    return Math.floor((this.age / planetYears.mercuryAge));
   }
 
   MercuryAgeLimit() {
-    return (this.age * lifeExpectancy.mercuryLimit / planetYears.mercuryAge.toFixed(2));
+    return Math.floor((this.age * lifeExpectancy.mercuryLimit / planetYears.mercuryAge));
   }
 
   // Mars Planet
   ConvertMarsAge() {
-    return (this.age / planetYears.marsAge.toFixed(2));
+    return Math.floor((this.age / planetYears.marsAge));
   }
 
   MarsAgeLimit() {
-    return (this.age * lifeExpectancy.marsLimit / planetYears.marsAge.toFixed(2));
+    return Math.floor((this.age * lifeExpectancy.marsLimit / planetYears.marsAge));
   }
 
   // Venus Limit
   ConvertMarsAge() {
-    return (this.age / planetYears.venusAge.toFixed(2));
+    return Math.floor((this.age / planetYears.venusAge));
   }
 
   VenusAgeLimit() {
-    return (this.age * lifeExpectancy.venusLimit / planetYears.venusAge.toFixed(2));
+    return Math.floor((this.age * lifeExpectancy.venusLimit / planetYears.venusAge));
   }
 
   //   Jupiter Planet
   ConvertJupiterAge() {
-    return (this.age / planetYears.jupiterAge.toFixed(2));
+    return Math.floor((this.age / planetYears.jupiterAge));
   }
 
   JupiterAgeLimit() {
-    return (this.age * lifeExpectancy.jupiterLimit / planetYears.jupiterAge.toFixed(2));
+    return Math.floor((this.age * lifeExpectancy.jupiterLimit / planetYears.jupiterAge));
   }
 
   //  Years Left
