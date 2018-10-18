@@ -40,7 +40,7 @@ export class galaxyCal {
   }
 
   // Venus Limit
-  ConvertMarsAge() {
+  ConvertVenusAge() {
     return Math.floor((this.age / planetYears.venusAge));
   }
 
