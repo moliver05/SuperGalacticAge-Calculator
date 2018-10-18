@@ -14,7 +14,7 @@ const lifeExpectancy = {
   jupiterLimit: 12
 };
 
-// Main 
+// Main Something
 export class galaxyCal {
   constructor(age) {
     this.age = age;
